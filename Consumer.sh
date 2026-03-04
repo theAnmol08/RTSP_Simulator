@@ -1,0 +1,1 @@
+gst-launch-1.0 rtspsrc location=rtsp://localhost:8554/cam1 latency=50 protocols=tcp name=src src. ! queue ! rtph264depay ! h264parse ! avdec_h264 ! videoconvert ! autovideosink src. ! queue ! rtpmp4gdepay ! aacparse ! avdec_aac ! audioconvert ! audioresample ! autoaudiosink
