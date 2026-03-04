@@ -10,7 +10,7 @@ It simulates an IP camera by converting a video file into a live RTSP feed.
 ```bash
 chmod +x setup.sh run.sh
 ./setup.sh
-./run.sh
+./run.sh <mp4 file>
 ```
 
 Once running, your RTSP stream will be available at:
